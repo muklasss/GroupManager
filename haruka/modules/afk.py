@@ -87,7 +87,7 @@ def check_afk(bot, update, user_id, fst_name):
         if not user.reason:
             res = tld(chat.id, f"{fst_name} Sedang OFFLINE!")
         else:
-            res = tld(chat.id, f"{fst_name} Sedang OFFLINE! karena:\n{user.reason}")
+            res = tld(chat.id, f"{fst_name} Sedang OFFLINE!    karena:\n{user.reason}")
         update.effective_message.reply_text(res)
 
 
